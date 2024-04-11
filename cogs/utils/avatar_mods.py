@@ -3,6 +3,7 @@
 import discord
 from io import BytesIO
 from PIL import Image
+import PIL.ImageOps
 from typing import Callable
 
 
