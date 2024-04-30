@@ -42,7 +42,10 @@ class Nasa(commands.Cog):
                 f"Command is on cooldown. Retry in {round(error.retry_after)} seconds.",
                 ephemeral=True,
             )
-
+app_commands
+    app_commands.command(name="test", description="Test command for neovim")
+    async def test(self, interaction: discord.Interaction):
+        await interaction.response.send_message("Hola, soy una prueba")
 
 async def setup(bot):
     await bot.add_cog(Nasa(bot))
